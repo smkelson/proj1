@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+
+.header{
+    color: red;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    border-bottom: red dotted 3px;
+    height: 200px;
+}
