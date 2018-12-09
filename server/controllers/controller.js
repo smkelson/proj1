@@ -35,6 +35,29 @@ module.exports = {
         res.status(200).send(recipes)
     },
     createARecipe: (req, res) => {
+        let newObj = {
+            id: id,
+            recipeName: req.body.recipeName,
+            category: req.body.category,
+            rating: req.body.rating
+        }
+        console.log(newObj)
+        recipes.push(newObj)
+        id++
+        res.status(200).send(recipes)
+    },
+    deleteARecipe: (req, res) => {
+        const deleteId = req.params.id;
+        const recipeIndex = recipes.findIndex(recipe => recipe.id == deleteId)
+        recipes.splice(recipeIndex,1)
+        res.status(200).send(recipes)
+    },
+    editARecipe: (req, res) => {
+        const updateId = req.body.id
+        const recipeIndex = recipes.findIndex(recipe => recipe.id == updateId)
+        recipes[recipeIndex].recipeName = req.body.recipeName
+        recipes[recipeIndex].category = req.body.recipeCat
+        recipes[recipeIndex].rating = req.body.recipeRating
         res.status(200).send(recipes)
     }
 }

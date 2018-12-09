@@ -8,5 +8,7 @@ app.use(express.json());
 
 app.get('/api/recipes', ctrl.getAllRecipes);
 app.post('/api/recipes', ctrl.createARecipe);
+app.delete('/api/recipes', ctrl.deleteARecipe);
+app.put('/api/recipes', ctrl.editARecipe)
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
