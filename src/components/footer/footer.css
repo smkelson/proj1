@@ -1,0 +1,15 @@
+.footer{
+    color: red;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-top: dotted red 3px;
+    height: 75px;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+.pic{
+    height: 150px;
+    width: 200px;
+    
+}

@@ -1,0 +1,28 @@
+.title-container{
+    /* margin: 0px 100px 0px 100px; */
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+        margin-top: 25px;
+    
+    
+}
+
+.title{
+    width: 250px;
+    border: solid 1px black;
+    background-color: rgb(157, 239, 250);
+}
+
+.list-container{
+    /* margin: 0px 100px 0px 100px; */
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+
+.list-item{
+    width: 250px;
+    border: solid 1px black;
+}

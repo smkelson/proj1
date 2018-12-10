@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import './header.css'
 
 
-class Header extends Component {
-    render() {
+function Header(){
         return (
             <div className='header'>
                 <h1>RECIPES</h1>
             </div>
         )
     }
-}
 
 export default Header;
